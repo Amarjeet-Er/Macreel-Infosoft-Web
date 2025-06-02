@@ -1,0 +1,57 @@
+.blogs_aera {
+  width: 100%;
+  height: auto;
+  float: left;
+  display: flex;
+  flex-direction: column;
+
+  .blog_swiper {
+    width: 80%;
+    height: auto;
+    margin: 50px 10%;
+
+    .card {
+      // width: 300px;
+      height: auto;
+      overflow: hidden;
+
+      .card-body {
+        h6 {
+          font-size: 1.3rem;
+          font-weight: 500;
+          text-transform: capitalize;
+          line-height: 25px;
+        }
+        p {
+          padding: 5px;
+          font-size: 1rem;
+          line-height: 25px;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: normal;
+        }
+      }
+    }
+    .card:hover {
+      color: #00b36b;
+      cursor: pointer;
+    }
+  }
+}
+
+
+@media(max-width:780px) and (min-width:0px){
+  .blogs_aera {
+    .blog_swiper {
+      width: 80%;
+      margin-left: 10%;
+
+      .card {
+        width: auto;
+      }
+    }
+  }
+}

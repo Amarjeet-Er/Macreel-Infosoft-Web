@@ -1,0 +1,1234 @@
+<div class="containers">
+  <swiper [spaceBetween]="10" [centeredSlides]="true" [autoplay]="{ delay: 5000, disableOnInteraction: false }"
+    [pagination]="{ clickable: true, dynamicBullets: true }" [grabCursor]="true" [loop]="true" class="sliderBox">
+    <ng-template swiperSlide>
+      <div class="text">
+        <h3>Welcome to Macreel Infosoft</h3>
+        <h1>Software and Web Development Services in Noida</h1>
+        <h5>
+          One stop solution for your business need! We help your business grow
+          with great websites, <br />
+          software, apps, and digital marketing. We're here only for you
+        </h5>
+        <button mat-raised-button (click)="openEnquiryForm()" title="Enquiry Now">
+          Enquiry
+        </button>
+      </div>
+      <img src="../../../assets/carousel-4.webp" alt="Slider image" title="Macreel Slider" />
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="text">
+        <h3>Digital Marketing Services</h3>
+        <h1 class="head_title lh-normal">
+          Success start here — let's make it happen together!
+        </h1>
+        <!-- <h3 style="margin-bottom: -27px">Digital Marketing Services</h3>
+        <div class="title">
+          <h6 class="head_title lh-normal">
+            Success start here — let's make it happen together!
+          </h6>
+        </div> -->
+        <h5>
+          We'll make sure your business stands out, reaches the right audience
+          and drives real results. <br />
+          Let the world see your brand shine across all platforms.
+        </h5>
+        <button mat-raised-button (click)="openEnquiryForm()" title="Enquiry Now">
+          Enquiry
+        </button>
+      </div>
+      <img src="../../../assets/carousel-3.webp" alt="Slider image" title="Macreel Slider" />
+    </ng-template>
+  </swiper>
+
+  <!-- year of experience code start here  -->
+  <div class="experience">
+    <div class="contents">
+      <div class="title">
+        <h6 style="text-align: left" class="head_title">
+          The Best IT Solution With 12+ <br />
+          Years of Experience
+        </h6>
+        <h4 style="text-align: left">
+          Macreel Infosoft Pvt. Ltd. is
+          <b>Top IT Services Company in Delhi NCR, India</b> with a diversified
+          portfolio and a precise approach to Website design & development,
+          Software, Mobile App Development and Digital Marketing keeping your
+          business goals in mind and providing a scalable solution for your
+          business. We are a creative and committed web design, development and
+          digital marketing agency in Noida (India), known for more than a
+          decade to build the most beautiful & engaging UI designs for distinct
+          businesses. We are developing customized Software and Mobile apps with
+          the latest technologies to ensure swift, responsive & easy projects.
+          Our post-launch support makes us the
+          <b>Best Software Development Company in Noida, Delhi NCR.</b> As a
+          leading Digital Marketing company, we specialize in propelling your
+          business to new heights. Choose us to boost your online presence,
+          engage your audience, and drive conversion.
+        </h4>
+      </div>
+      <div class="box_content_area">
+        <div class="boxes" >
+          <div class="icon_area">
+            <mat-icon>wb_incandescent</mat-icon>
+          </div>
+          <div class="box_title">
+            <h4>Best IT Solutions</h4>
+            <h5>
+              Innovative, cutting-edge technologies, user-friendly, customized
+              solutions
+            </h5>
+          </div>
+        </div>
+        <div class="boxes">
+          <div class="icon_area">
+            <mat-icon>people</mat-icon>
+          </div>
+          <div class="box_title">
+            <h4>Professional Staff</h4>
+            <h5>
+              Highly qualified, collaborating seamlessly, focused on quality and
+              teamwork.
+            </h5>
+          </div>
+        </div>
+        <div class="boxes" >
+          <div class="icon_area">
+            <mat-icon> business</mat-icon>
+          </div>
+          <div class="box_title">
+            <h4>State-of-the-Art Infrastructure</h4>
+            <h5>
+              Excellent infrastructure with a comfortable environment for the
+              company.
+            </h5>
+          </div>
+        </div>
+        <div class="boxes">
+          <div class="icon_area">
+            <mat-icon>headset_mic</mat-icon>
+          </div>
+          <div class="box_title">
+            <h4>24/7 Support</h4>
+            <h5>
+              Our priority is to ensure client satisfaction. We offer reliable
+              assistance around the clock
+            </h5>
+          </div>
+        </div>
+        <div class="boxes">
+          <div class="icon_area">
+            <mat-icon> monetization_on</mat-icon>
+          </div>
+          <div class="box_title">
+            <h4>Affordable Price</h4>
+            <h5>
+              We understand the importance of budget-friendly solutions without
+              compromising on quality.
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contents" id="image_content" data-aos="fade-left">
+      <img src="../../../assets/aboutus.webp" alt="macreel-infosoft-about" title="macreel-infosoft-about" id="aboutimg"/>
+      <img src="../../../assets/graph.png" alt="Graph image" id="graph_img" title="graph" />
+    </div>
+  </div>
+
+  <!-- year of experience code ends here  -->
+
+  <!-- Best services code start here  -->
+
+  <div class="services">
+    <div class="title">
+      <h6 data-aos="fade-right" class="head_title">
+        Best IT Services in Noida, India
+      </h6>
+      <h4 data-aos="fade-down-left">
+        At Macreel Infosoft Pvt. Ltd, we are committed to transforming your
+        digital dreams into reality. <br />
+        Our diverse range of services is designed to meet the unique needs of
+        businesses across all industries.
+      </h4>
+    </div>
+    <div class="card_area">
+      <div class="card">
+        <img src="../../../assets/webdesign.gif" class="card-img-top" alt="Website Designing" title="Website Designing" />
+        <div class="card-body">
+          <h5 class="card-title">Website Designing</h5>
+          <p class="card-text">
+            Combining the best technology & creative thinking we’ve got a team
+            of in-house website designers who have specialized in developing
+            affordable and lead generating websites...
+          </p>
+          <button class="btn" (click)="navigateTo('/home/webdesign/webdesign')">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../../../assets/website-development.gif" class="card-img-top" alt="Website Development"
+          title="Website Development" />
+        <div class="card-body">
+          <h5 class="card-title">Website Development</h5>
+          <p class="card-text">
+            To make your website stand out and work smoothly, good web
+            development is essential. At Macreel Infosoft Pvt. Ltd., we love
+            creating digital solutions, SEO friendly that fit your needs...
+          </p>
+          <button class="btn" (click)="navigateTo('/home/webdevelopment/webDeve')">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../../../assets/software-dev.gif" class="card-img-top" alt="Software Development"
+          title="Software Development" />
+        <div class="card-body">
+          <h5 class="card-title">Software Development</h5>
+          <p class="card-text">
+            Our company specializes in software development, offering tailored
+            solutions for a variety of clients. With our team's expertise and
+            the latest technologies, we deliver custom software...
+          </p>
+          <button class="btn" (click)="navigateTo('/home/softwaredevelopment/softwaredev')">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../../../assets/mobileapp.gif" class="card-img-top" alt="Mobile App Development"
+          title="Mobile App Development" />
+        <div class="card-body">
+          <h5 class="card-title">Mobile App Development</h5>
+          <p class="card-text">
+            In today's era, over 50% of web traffic comes from mobile platforms.
+            Android and iOS mobile applications play a crucial role. We are the
+            Best Mobile App Development Company in Noida, India...
+          </p>
+          <button class="btn" (click)="navigateTo('/home/mobiledevelopment/mobile_app')">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../../../assets/digital-marketing.gif" class="card-img-top" alt="Digital Marketing"
+          title="Digital Marketing" />
+        <div class="card-body">
+          <h5 class="card-title">Digital Marketing</h5>
+          <p class="card-text">
+            At Macreel Infosoft Pvt. Ltd., we're a Top SEO Company offering
+            great digital marketing services in India. Our team helps you
+            attract customers to your website with SEO and keep them engaged
+            with your brand through SMO...
+          </p>
+          <button class="btn" (click)="navigateTo('/home/digitalmarketing/digitalmark')">
+            Learn More
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../../../assets/seo-service.gif" class="card-img-top" alt="SEO Optimization"
+          title="Search Engine Optimization" />
+        <div class="card-body">
+          <h5 class="card-title">SEO</h5>
+          <p class="card-text">
+            Designing an impressive website is one thing and generating leads
+            through it is another. Contact us for our affordable SEO Service in
+            Delhi. Macreel Infosoft Pvt. Ltd. can improve the ranking and
+            visibility of your website...
+          </p>
+          <button class="btn" (click)="navigateTo('/home/seo/seo_opt')">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Best services code start here  -->
+
+  <!-- features for business code start from here  -->
+
+  <div class="features">
+    <div class="title">
+      <h6 class="head_title">Top Features for Your Business Success</h6>
+      <h4>
+        Macreel Infosoft delivers Top-notch IT solutions with a focus on
+        Cutting-Edge Technology and End-to-End Development <br />
+        for seamless solutions. Our User-Centric Design ensures intuitive
+        interfaces,<br />
+        while Scalable Solutions adapts to your growth. Benefit from Robust
+        Security and Transparent Processes <br />that keep you informed every
+        step of the way.
+      </h4>
+    </div>
+    <div class="feature_card_area">
+      <div class="card">
+        <mat-icon>language</mat-icon>
+        <div class="card-body">
+          <h5 class="card-title">Cutting-Edge Website Design & Development</h5>
+          <p class="card-text">
+            Transofrm your online persence with our innovative website design
+            and development services. We create stunning, user freindly website
+            that are optimized for performance accross all devices. Whether you
+            need a sleek corporate site or a vibrant e-commerce platform, we
+            deliver solutions tailored to your unique needs.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <mat-icon>perm_data_setting</mat-icon>
+        <div class="card-body">
+          <h5 class="card-title">Custom Software Solutions</h5>
+          <p class="card-text">
+            Streamline your operations with our bespoke software development
+            services. Our team crafts custom software that addresses your
+            specific business challenges, enhancing efficiency and productivity.
+            from enterprise solutions to tailored applications, we provide
+            reliable and scalable software solutions.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <mat-icon> stay_current_portrait</mat-icon>
+        <div class="card-body">
+          <h5 class="card-title">Dynamic Mobile App Development</h5>
+          <p class="card-text">
+            Engage your audience on the go with our mobile app development
+            services. We design and build intuitive nand high performinjg apps
+            for both IOS and Android platforms. Our apps are crafted to deliver
+            a seamless user experience and drive your business goals forward.
+          </p>
+        </div>
+      </div>
+      <div class="card" >
+        <mat-icon>language</mat-icon>
+        <div class="card-body">
+          <h5 class="card-title">Strategic Digital Marketing</h5>
+          <p class="card-text">
+            Boost your online visibility and reach your target adudience with
+            our comprehensive digital marketing strategies. Our Services include
+            SEO, social media marketing, content creation, and more. We use
+            data-driven approaches to create effective compaigns that deliver
+            measurable results.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- features for business code end from here  -->
+
+  <!-- what we offer code start here  -->
+  <div class="benifits">
+    <div class="title">
+      <h6 class="head_title">Benefits We offer</h6>
+    </div>
+    <div class="containerss">
+      <div class="buttons">
+        <button *ngFor="let item of features; let i = index" [ngClass]="{ active: selectedIndex === i }"
+          (click)="selectFeature(i)">
+          {{ item.name }}
+        </button>
+      </div>
+
+      <div class="content">
+        <img [src]="features[selectedIndex].image" alt="Feature Image" title="Macreel Feature" />
+
+        <div class="text">
+          <h2>{{ features[selectedIndex].title }}</h2>
+          <p>{{ features[selectedIndex].description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- what we offer code end here  -->
+
+  <!-- blogs for business growth code start here  -->
+
+  <div class="blogs_aera">
+    <div class="title">
+      <h6 class="head_title">Blogs For Business Growth</h6>
+      <h4>
+        Stay updated with Macreel Infosoft for latest insights and industry
+        trends! Check topics on website <br />
+        design, digital marketing, mobile apps, software development and many
+        more.
+      </h4>
+    </div>
+
+    <div class="blog_swiper">
+      <swiper [slidesPerView]="3" [spaceBetween]="10" [autoplay]="{ delay: 3000, disableOnInteraction: false }"
+        [loop]="true" [breakpoints]="breaksPoint" class="custom-swiper">
+        <ng-template swiperSlide>
+          <div class="card">
+            <img src="../../../assets/e-commerce.png" class="card-img-top" alt="Top Ecommerce Website Development"
+              title="Top Ecommerce Website Development" />
+            <div class="card-body">
+              <h6 class="card-title">
+                Top e-commerce Website Dvelopment Company in 2024.
+              </h6>
+              <p class="card-text">
+                In the ever-evolving world of eCommerce, having a cutting-edge
+                online store is essential for success. As we move through 2024,
+                businesses need more than just a website-they need a platform
+                that drives sales, engages customers, and adapts to emerging
+                trends. Here's a look at some of the Top Ecommerce Website
+                Development Companies of 2024 that are setting the standard for
+                excellence in the industry.
+              </p>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="card">
+            <img src="../../../assets/web-app.png" class="card-img-top" alt="Dropshipping App Development"
+              title="Dropshipping App Development" />
+            <div class="card-body">
+              <h6 class="card-title">
+                How to develop a custom Dropshipping App everything you need to
+                know
+              </h6>
+              <p class="card-text">
+                In the rapidly growing world of e- commerce, dropshipping has
+                emerged as a popular model for entrepreneurs looking to start
+                their online business with minimal upfront investment. If you're
+                considering developing a custom dropshipping app to streamline
+                your operations, you're on the right track.
+              </p>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="card">
+            <img src="../../../assets/mobile-apps.png" class="card-img-top" alt="Web Application Development"
+              title="Web Application Development" />
+            <div class="card-body">
+              <h6 class="card-title">
+                A complete guide to web application development: Types
+              </h6>
+              <p class="card-text">
+                In today's digital landscape, web applications play a crucial
+                role in transforming business operations and enhancing user
+                experiences. Understanding the different types of web
+                applications can help you choose the right solution for your
+                needs. Here's a comprehensive guide to the various types of web
+                applications:
+              </p>
+            </div>
+          </div>
+        </ng-template>
+      </swiper>
+    </div>
+  </div>
+
+  <!-- blogs for business growth code end here  -->
+
+  <!-- frequently asked question code start here  -->
+
+  <div class="faq_area">
+    <div class="title">
+      <h6 class="head_title">
+        Frequently Asked Question <font style="color: #00b36b">(FAQs).</font>
+      </h6>
+    </div>
+    <div class="question_area">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header lh-normal">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              1. What services does Macreel Infosoft Pvt. Ltd. offer?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              We provide a range of IT solutions including website design and
+              development, custom software solutions, mobile app development,
+              and digital marketing services. Our goal is to help business
+              establish a strong online presence and achieve their digital
+              objectives.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header lh-normal">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              2. What is the process for starting website development project
+              with Macreel Infosoft?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Our website development process involves an initial consultation
+              to understand your needs, followed by planning and design phases.
+              We then develop and test the website before launching it.
+              Throughout the process, we keep you informed and involved to
+              ensure the final product meets your expectations.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header lh-normal">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              3. Can you help with website maintenance and updates?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Yes, we offer ongoing website maintenance and support services.
+              Whether you need regular updates, ecurity enhacements, or
+              troubleshooting our team is hear to ensure your website remains
+              functional and up to date.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header lh-normal">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              4. Do you offer custom software solutions?
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Absolutly! We specialize in creating custom software tailored to
+              your specific business needs. Whether you require a new
+              application or modifications to an existing one, our developers
+              will work closely with you to deliver a solution that fits your
+              requuirements.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header lh-normal">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              5. What is digital marketing , and how can it benefit my business?
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Digital marketing encompasses various strategies to promote your
+              advertising. Effective digital marketing helps increase your
+              online visibility, attract more customers, and drive growth.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header lh-normal">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+              6. How long does it take to develop a website?
+            </button>
+          </h2>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              The timeline for website development varies based on the
+              complexity and scope of the project. On average, a standard
+              website can take anywhere from 4 to 8 weeks. We'll provide a more
+              accurate timeline during the initial consultation.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header lh-normal">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+              7. Can you assit with app development for both Android and iOS
+              platforms?
+            </button>
+          </h2>
+          <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Yes, we offer mobile app development services for both Android and
+              iOS platforms. Our team develops high - quality, user-friendly
+              apps that meet the specific needs of your business and target
+              audience.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image_area">
+      <img src="../../../assets/webdesign.gif" alt="Website Designing" title="Website Designing" />
+    </div>
+  </div>
+  <!-- frequently asked question code end here  -->
+
+  <!-- our team code start from here  -->
+
+  <div class="our_team">
+    <div class="title">
+      <h6 class="head_title">Meet Our Advisers</h6>
+      <h4>
+        Our team comprises talented individuals who bring their expertise and
+        creativity <br />
+        to every project. From experienced developers and designers to strategic
+        marketers and project managers, <br />
+        each member of our team is dedicated to achieving excellence and
+        exceeding your expectations.
+      </h4>
+    </div>
+
+    <div class="team_card_area">
+      <div class="team_card">
+        <div class="profile_img">
+          <img src="../../../assets/team-1.jpg" alt="Macreel Infosoft Chairman" title="NR Tyagi Mareel Infosoft Chairman" />
+        </div>
+        <div class="details">
+          <h6>NR Tyagi</h6>
+          <h4>(Chairman)</h4>
+        </div>
+        <!-- <div class="overflow"></div> -->
+      </div>
+      <div class="team_card">
+        <div class="profile_img">
+          <img src="../../../assets/team-2.jpg" alt="Director of Macreel Infosoft Manish Tyagi" title="Manish Tyagi" />
+        </div>
+        <div class="details">
+          <h6>Manish Tyagi</h6>
+          <h4>(Director)</h4>
+        </div>
+        <!-- <div class="overflow"></div> -->
+      </div>
+
+      <div class="team_card">
+        <div class="profile_img">
+          <img src="assets/priyankas.jpeg" alt="Priyanka Maindolia" title="Priyanka Maindolia" />
+        </div>
+        <div class="details">
+          <h6>Priyanka Maindolia</h6>
+          <h4>(Director)</h4>
+        </div>
+        <!-- <div class="overflow"></div> -->
+      </div>
+      <div class="team_card">
+        <div class="profile_img">
+          <img src="assets/team-3.jpg" alt="Himanshu Gupta" title="Himanshu Gupta" />
+        </div>
+        <div class="details">
+          <h6>Himanhsu Gupta</h6>
+          <h4>(HR Head)</h4>
+        </div>
+        <!-- <div class="overflow"></div> -->
+      </div>
+    </div>
+  </div>
+  <!-- our team code ends here  -->
+
+  <!-- top Trending technology code start here -->
+
+  <div class="trending_technology">
+    <div class="title">
+      <h6 class="head_title">Top Trending Technology</h6>
+      <h4>
+        Dive into Macreel Infosoft’s top tech picks! Stay on top of the latest
+        trends with trending technology <br />
+        on Angular, React, Java Script, Bootstrap, TypeScript,.Net and Many
+        More. Discover how <br />
+        these innovations are changing the world and get the insights <br />
+        you need to stay ahead. Explore what's new and exciting in tech with us!
+      </h4>
+    </div>
+    <div class="sliding_area">
+      <swiper [slidesPerView]="3" [spaceBetween]="10" [autoplay]="{ delay: 3000, disableOnInteraction: false }"
+        [loop]="true" [breakpoints]="breaksPointts" class="custom-swiper">
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/angular.png" alt="Angular" title="Angular" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/mysql-img.png" alt="MySql" title="MySql" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/html.png" alt="HTML" title="HTMl" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/css-img.png" alt="CSS" title="Image" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/javascript.png" alt="javaScript" title="JavaScript" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/bootstrap.png" alt="Bootstrap" title="Bootstrap" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/react.png" alt="React" title="React" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/python.png" alt="Python" title="Python" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/typescript.png" alt="Typescript" title="TypeScript" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/xcode-img.png" alt="Xcode" title="Xcode" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/ionic.png" alt="Ionic" title="Ionic" />
+          </div>
+        </ng-template>
+      </swiper>
+    </div>
+  </div>
+  <!-- top Trending technology code end here -->
+
+  <!-- latest portfolio code start from here  -->
+
+  <div class="latest_portfolio">
+    <div class="title">
+      <h6 class="head_title">Latest Portfolio</h6>
+      <h4>
+        At Macreel Infosoft, we pride ourselves on delivering cutting-edge IT
+        solutions that drive innovation and <br />
+        success for our clients. Our latest portfolio showcases our commitment
+        to excellence across various <br />
+        industries. Here’s a glimpse of our recent projects:
+      </h4>
+    </div>
+    <div class="slide_portfolio">
+      <swiper [slidesPerView]="3" [spaceBetween]="10" [autoplay]="{ delay: 3000, disableOnInteraction: false }"
+        [loop]="true" [breakpoints]="breaksPointtss" class="custom-swiper">
+        <ng-template swiperSlide>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <img src="../../../assets/turningbrain.jpg" alt="Turning Brain Website" title="Turning Brain" />
+          </button>
+        </ng-template>
+        <ng-template swiperSlide>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            <img src="../../../assets/scert-up.png" alt="State Council of Educational Research & Traning"
+              title="State Council of Educational Research & Traning" />
+          </button>
+        </ng-template>
+        <ng-template swiperSlide>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            <img src="../../../assets/delhitaxiservice.jpg" alt="Delhi Taxi Service" title="Delhi Taxi Service" />
+          </button>
+        </ng-template>
+        <ng-template swiperSlide>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            <img src="../../../assets/heerafacility.png" alt="Heera Website" title="Heera Website" />
+          </button>
+        </ng-template>
+        <ng-template swiperSlide>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModals">
+            <img src="../../../assets/servaassociates.jpg" alt="Heera Website" title="Heera Website" />
+          </button>
+        </ng-template>
+        <ng-template swiperSlide>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal4">
+            <img src="../../../assets/granlighting.jpg" alt="Grain lighting website" title="Grain lighting website" />
+          </button>
+        </ng-template>
+        <ng-template swiperSlide>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal5">
+            <img src="../../../assets/tajmahaldaytours.png" alt="Taj Mahal Tours website" title="Taj Mahal Tours website" />
+          </button>
+        </ng-template>
+        <ng-template swiperSlide>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal6">
+            <img src="../../../assets/thedivinedentalcentre.jpg" alt="Divine Website" title="Divine Website" />
+          </button>
+        </ng-template>
+        <ng-template swiperSlide>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal7">
+            <img src="../../../assets/allianceworldschool.jpg" alt="Alliance World School" title="Alliance World School" />
+          </button>
+        </ng-template>
+        <ng-template swiperSlide>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal8">
+            <img src="../../../assets/delhicityschool.jpg" alt="Delhi City School Website" title="Delhi City School Website" />
+          </button>
+        </ng-template>
+        <ng-template swiperSlide>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal9">
+            <img src="../../../assets/saikarunadham.png" alt="Sai karuna dham website" title="Sai karuna dham website" />
+          </button>
+        </ng-template>
+        <ng-template swiperSlide>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal1s">
+            <img src="../../../assets/delhicityschool.in_Science-Tech.jpg" alt="Alliance World School"
+              title="Alliance World School" />
+          </button>
+        </ng-template>
+      </swiper>
+    </div>
+  </div>
+  <!-- latest portfolio code ends from here  -->
+
+  <div class="premium_client">
+    <div class="title">
+      <h6 class="head_title">Our Premium Clients</h6>
+      <h4>
+        At Macreel Infosoft, we pride ourselves on delivering cutting-edge IT
+        solutions that drive innovation and <br />
+        success for our clients. Our latest portfolio showcases our commitment
+        to excellence across various <br />
+        industries. Here’s a glimpse of our recent projects:
+      </h4>
+    </div>
+    <div class="icon_slide">
+      <swiper [slidesPerView]="8" [spaceBetween]="10" [autoplay]="{ delay: 3000, disableOnInteraction: false }"
+        [loop]="true" class="custom-swiper" [breakpoints]="breaksPoints">
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/airtel.webp" alt="Airtel" title="Airtel" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/cambridge-logo.webp" alt="Cambridge School" title="Cambridge School" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/dcs-logo.webp" alt="DCS" title="DCS" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/divine.webp" alt="Divine" title="Divine" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/eduaffair.png" alt="Eduaffair" title="Eduaffair" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/gov-of-india-logo.webp" alt="Govt. of India" title="Govt. of India" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/grain-lighting.png" alt="Grain Lighting" title="Grain Lighting" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/greenfield.png" alt="Green Field" title="Green Field" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/heeragroup.jpeg" alt="Heera group" title="Heera group" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/khd.webp" alt="KHD" title="KHD" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/kisanmandi.svg" alt="kisanmandi" title="kisanmandi" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/matlinehouse.jpeg" alt="matline house" title="matline house" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/myjyotishg.jpeg" alt="MyJyothish" title="MyJyothish" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/scert-up-logo.webp" alt="SECRET UP" title="SECRET UP" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/serva.jpeg" alt="SEVA" title="SEVA" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/stainlay-india.png" alt="Stainlay india" title="Stainlay india" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/training-brain.png" alt="turning brain" title="turning brain" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/up-logo.webp" alt="Government of Uttar pradesh" title="Government of Uttar pradesh" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/vakil-uncle.png" alt="Vakil uncle" title="Vakil uncle" />
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="image">
+            <img src="../../../assets/wood-group.webp" alt="Wood group" title="Wood group" />
+          </div>
+        </ng-template>
+
+        <ng-template swiperSlide> </ng-template>
+      </swiper>
+    </div>
+  </div>
+
+  <div class="testimonials">
+    <div class="title">
+      <h6 class="head_title">What Our Clients Say About Our Services</h6>
+    </div>
+
+    <div class="review_area">
+      <swiper [slidesPerView]="3" [spaceBetween]="12" [autoplay]="{ delay: 4000, disableOnInteraction: false }"
+        [loop]="true" [breakpoints]="breaksPoint" class="custom-swiper">
+        <ng-template swiperSlide>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="profile-section">
+                <img class="profile-img" src="../../../assets/Nishank Kumar.webp" alt="Nishank Kumar" title="Nishank Kumar" />
+              </div>
+              <p class="testimonial-text">
+                We've been working together with Macreel Infosoft Pvt Ltd for
+                more than 4 years now and it has been a very positive experience
+                for our company.
+              </p>
+              <div class="testimonial-author">
+                <h3 class="author-name">Nishank Kumar</h3>
+                <p class="author-position">(Charted Accountant)</p>
+              </div>
+              <div class="star-rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="profile-section">
+                <img class="profile-img" src="../../../assets/Nitin jain.webp" alt="Nitin jain" title="Nitin Jain" />
+              </div>
+              <p class="testimonial-text">
+                The Macreel Infosoft team is excellent in their knowledge and
+                experience to deliver on time and according to requirements. We
+                are very happy in using mobile App by them.
+              </p>
+              <div class="testimonial-author">
+                <h3 class="author-name">Nitin Jain</h3>
+                <p class="author-position">MD (LETS GET WISER)</p>
+              </div>
+              <div class="star-rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="profile-section">
+                <img class="profile-img" src="../../../assets/Vilson.webp" alt="Vilson Masih" title="Vilson Masih" />
+              </div>
+              <p class="testimonial-text">
+                Outstanding digital marketing services! Effective strategies
+                increased online visibility, and superb results. A Top- notch
+                team that delivers beyond expectations. Highly recommend for
+                impactful digital presence.
+              </p>
+              <div class="testimonial-author">
+                <h3 class="author-name">Vilson Masih</h3>
+                <p class="author-position">(GM. Hotel atithhi place, delhi)</p>
+              </div>
+              <div class="star-rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="profile-section">
+                <img class="profile-img" src="../../../assets/Dr. Rajkapoor.webp" alt="Dr. Rajkapoor" title="Dr. Rajkapoor" />
+              </div>
+              <p class="testimonial-text">
+                I have been involved in website design and development for our
+                medical conferences. Macreel team members are efficient,
+                supportive, and use best...
+              </p>
+              <div class="testimonial-author">
+                <h3 class="author-name">Dr. Rajkapoor</h3>
+                <p class="author-position">
+                  (Ex-Principal, Safdarjung Hospital New Delhi)
+                </p>
+              </div>
+              <div class="star-rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="profile-section">
+                <img class="profile-img" src="../../../assets/Gaurav Thakral.webp" alt="Gaurav Thakral" title="Gaurav Thakral" />
+              </div>
+              <p class="testimonial-text">
+                Macreel crafted software for us. They propel our project forward
+                swiftly and maintain us agile enough to remain competitive. We
+                would endorse them.
+              </p>
+              <div class="testimonial-author">
+                <h3 class="author-name">Gaurav Tharkal</h3>
+                <p class="author-position">(Acumen Computers)</p>
+              </div>
+              <div class="star-rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="profile-section">
+                <img class="profile-img" src="../../../assets/Jitender.jpg" alt="Jitender" title="Jitender" />
+              </div>
+              <p class="testimonial-text">
+                Very professional and talented developers. I am impressed by
+                technical experties and support team. Must go to a company for
+                software development.
+              </p>
+              <div class="testimonial-author">
+                <h3 class="author-name">Mr. Jitendra</h3>
+                <p class="author-position">(Pehel detergent delhi)</p>
+              </div>
+              <div class="star-rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </swiper>
+    </div>
+  </div>
+</div>
+
+<!-- models -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="../../../assets/turningbrain.jpg" alt="Turning Brain" title="Turning Brain" width="100%" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="../../../assets/scert-up.png" alt="SCERT Up" title="SCERT UP" width="100%" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="../../../assets/delhitaxiservice.jpg" alt="Delhi tax service" title="Delhi Tax Service" width="100%" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModals" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="../../../assets/servaassociates.jpg" alt="Serva Associate" title="Serva Associate" width="100%" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="../../../assets/granlighting.jpg" alt="Grain lighting" title="Grain Lighting" width="100%" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="../../../assets/tajmahaldaytours.png" alt="Taj mahal days Tours" title="Taj mahal days Tours" width="100%" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="../../../assets/thedivinedentalcentre.jpg" alt="The Divine Dental Centre" title="The Divine Dental Centre"
+          width="100%" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="../../../assets/allianceworldschool.jpg" alt="Alliance World School" title="Alliance World School"
+          width="100%" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="../../../assets/delhicityschool.jpg" alt="Delhi city school" title="Delhi City School" width="100%" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="../../../assets/saikarunadham.png" alt="Sai Karuna Dham" title="Sai Karuna Dham" width="100%" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal1s" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="../../../assets/delhicityschool.in_Science-Tech.jpg" alt="Delhi City School" title="Delhi City School"
+          width="100%" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- models -->
