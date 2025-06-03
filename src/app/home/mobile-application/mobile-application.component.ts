@@ -1,26 +1,26 @@
 import { Component } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-crm',
-  templateUrl: './crm.component.html',
-  styleUrls: ['./crm.component.scss']
+  selector: 'app-mobile-application',
+  templateUrl: './mobile-application.component.html',
+  styleUrls: ['./mobile-application.component.scss']
 })
-export class CrmComponent {
+export class MobileApplicationComponent {
 
   constructor(
     private _title: Title,
     private _meta: Meta
   ) {
-    this._title.setTitle('Best CRM Software Development Company in Noida');
+    this._title.setTitle('Best Mobile App Development Company in Noida | Macreel Infosoft');
     this._meta.addTags([
       {
         name: 'description',
-        content: "Leading CRM software development company in Noida, Macreel Infosoft delivers tailored solutions to boost customer engagement, streamline operations, and drive business growth."
+        content: "Macreel is the Best Mobile App Development Company in Noida for Enterprise & Startups with good quality android, iOS, and web app development services."
       },
       {
         name: 'keywords',
-        content: "Best Software Development Company in Noida, Best CRM Software Development Company in Noida, Macreel Infosoft for CRM Development, Best CRM Software Development Service in India, CRM Software for Your Business"
+        content: "best IT Company in Noida, best mobile app development company in India, top mobile app development company in India, android development company in Noida, iOS development company in Noida, best web app development company in Noida."
       },
       { name: 'author', content: 'Macreel Infosoft Pvt. Ltd.' },
       { name: 'distribution', content: 'global' },
@@ -34,5 +34,4 @@ export class CrmComponent {
       { name: 'coverage', content: 'Worldwide' }
     ]);
   }
-
 }

@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CrmComponent } from './crm.component';
+import { WebdesignComponent } from './webdesign.component';
 
-describe('CrmComponent', () => {
-  let component: CrmComponent;
-  let fixture: ComponentFixture<CrmComponent>;
+describe('WebdesignComponent', () => {
+  let component: WebdesignComponent;
+  let fixture: ComponentFixture<WebdesignComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CrmComponent]
+      declarations: [WebdesignComponent]
     });
-    fixture = TestBed.createComponent(CrmComponent);
+    fixture = TestBed.createComponent(WebdesignComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

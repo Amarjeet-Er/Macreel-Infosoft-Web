@@ -16,6 +16,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatTreeModule } from '@angular/material/tree';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { WebdesignComponent } from './webdesign/webdesign.component';
+import { WebdevelopmentComponent } from './webdevelopment/webdevelopment.component';
+import { SoftwaredevelopmentComponent } from './softwaredevelopment/softwaredevelopment.component';
+import { MobileApplicationComponent } from './mobile-application/mobile-application.component';
+import { SeoComponent } from './seo/seo.component';
+import { DigitalmarketingComponent } from './digitalmarketing/digitalmarketing.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +30,12 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     FooterComponent,
     ContainerComponent,
     EnquiryFormComponent,
+    WebdesignComponent,
+    WebdevelopmentComponent,
+    SoftwaredevelopmentComponent,
+    MobileApplicationComponent,
+    SeoComponent,
+    DigitalmarketingComponent,
   ],
   imports: [
     CommonModule,

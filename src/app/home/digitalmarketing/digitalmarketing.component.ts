@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-digital-marketing',
-  templateUrl: './digital-marketing.component.html',
-  styleUrls: ['./digital-marketing.component.scss']
+  selector: 'app-digitalmarketing',
+  templateUrl: './digitalmarketing.component.html',
+  styleUrls: ['./digitalmarketing.component.scss']
 })
-export class DigitalMarketingComponent {
+export class DigitalmarketingComponent {
 
   constructor(
     private _title: Title,
