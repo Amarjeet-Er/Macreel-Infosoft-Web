@@ -26,7 +26,6 @@ import { AboutComponent } from './about/about.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { ContactComponent } from './contact/contact.component';
 import { DirectorMessageComponent } from './director-message/director-message.component';
-import { OrgStructureComponent } from './org-structure/org-structure.component';
 import { OurTeamComponent } from './our-team/our-team.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsConditionComponent } from './terms-condition/terms-condition.component';
@@ -49,7 +48,6 @@ import { MatDialogModule } from '@angular/material/dialog';
     AboutComponent,
     OurTeamComponent,
     DirectorMessageComponent,
-    OrgStructureComponent,
     VissonComponent,
     BlogsComponent,
     ContactComponent,
