@@ -31,6 +31,7 @@ import { OurTeamComponent } from './our-team/our-team.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsConditionComponent } from './terms-condition/terms-condition.component';
 import { VissonComponent } from './visson/visson.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -73,6 +74,7 @@ import { VissonComponent } from './visson/visson.component';
     MatIconModule,
     MatButtonModule,
     SwiperModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent],
