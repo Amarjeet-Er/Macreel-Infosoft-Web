@@ -22,17 +22,17 @@
           text-transform: capitalize;
           line-height: 25px;
         }
-        p {
-          padding: 5px;
-          font-size: 1rem;
-          line-height: 25px;
-          display: -webkit-box;
-          -webkit-line-clamp: 3;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: normal;
-        }
+        // p {
+        //   padding: 5px;
+        //   font-size: 1rem;
+        //   line-height: 25px;
+        //   display: -webkit-box;
+        //   -webkit-line-clamp: 3;
+        //   -webkit-box-orient: vertical;
+        //   overflow: hidden;
+        //   text-overflow: ellipsis;
+        //   white-space: normal;
+        // }
       }
     }
     .card:hover {

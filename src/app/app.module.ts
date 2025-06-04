@@ -31,6 +31,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsConditionComponent } from './terms-condition/terms-condition.component';
 import { VissonComponent } from './visson/visson.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatIconModule,
     MatButtonModule,
     SwiperModule,
-    MatDialogModule
+    MatDialogModule,
+    LazyLoadImageModule
   ],
   providers: [],
   bootstrap: [AppComponent],

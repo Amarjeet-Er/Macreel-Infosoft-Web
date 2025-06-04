@@ -1,26 +1,22 @@
 <div class="containers">
-  <swiper [spaceBetween]="10" [centeredSlides]="true" [autoplay]="{ delay: 10000, disableOnInteraction: false }"
-    [pagination]="{ clickable: true, dynamicBullets: true }" [grabCursor]="true" [loop]="true" class="sliderBox">
+  <div class="sliderBox">
+    <div class="text">
+      <h3>Digital Marketing Services</h3>
+      <h1 class="head_title lh-normal">
+        Success start here — let's make it happen together!
+      </h1>
 
-    <ng-template swiperSlide>
-      <div class="text">
-        <h3>Digital Marketing Services</h3>
-        <h1 class="head_title lh-normal">
-          Success start here — let's make it happen together!
-        </h1>
-
-        <h5>
-          We'll make sure your business stands out, reaches the right audience
-          and drives real results. <br />
-          Let the world see your brand shine across all platforms.
-        </h5>
-        <button mat-raised-button (click)="openEnquiryForm()" title="Enquiry Now">
-          Enquiry
-        </button>
-      </div>
-      <img src="../../../assets/carousel-3.webp" alt="Slider image" title="Macreel Slider" />
-    </ng-template>
-  </swiper>
+      <h5>
+        We'll make sure your business stands out, reaches the right audience
+        and drives real results. <br />
+        Let the world see your brand shine across all platforms.
+      </h5>
+      <button mat-raised-button (click)="openEnquiryForm()" title="Enquiry Now">
+        Enquiry
+      </button>
+    </div>
+    <img src="../../../assets/carousel-3.webp" alt="Slider image" title="Macreel Slider" loading="lazy" />
+  </div>
 
   <!-- year of experience code start here  -->
   <div class="experience">
@@ -113,8 +109,8 @@
     </div>
     <div class="contents" id="image_content" data-aos="fade-left">
       <img src="../../../assets/aboutus.webp" alt="macreel-infosoft-about" title="macreel-infosoft-about"
-        id="aboutimg" />
-      <img src="../../../assets/graph.png" alt="Graph image" id="graph_img" title="graph" />
+        id="aboutimg" loading="lazy" />
+      <img src="../../../assets/graph.png" alt="Graph image" id="graph_img" title="graph" loading="lazy" />
     </div>
   </div>
 
@@ -137,7 +133,7 @@
     <div class="card_area">
       <div class="card">
         <img src="../../../assets/webdesign.gif" class="card-img-top" alt="Website Designing"
-          title="Website Designing" />
+          title="Website Designing" loading="lazy" />
         <div class="card-body">
           <h5 class="card-title">Website Designing</h5>
           <p class="card-text">
@@ -153,7 +149,7 @@
 
       <div class="card">
         <img src="../../../assets/website-development.gif" class="card-img-top" alt="Website Development"
-          title="Website Development" />
+          title="Website Development" loading="lazy" />
         <div class="card-body">
           <h5 class="card-title">Website Development</h5>
           <p class="card-text">
@@ -169,7 +165,7 @@
 
       <div class="card">
         <img src="../../../assets/software-dev.gif" class="card-img-top" alt="Software Development"
-          title="Software Development" />
+          title="Software Development" loading="lazy" />
         <div class="card-body">
           <h5 class="card-title">Software Development</h5>
           <p class="card-text">
@@ -185,7 +181,7 @@
 
       <div class="card">
         <img src="../../../assets/mobileapp.gif" class="card-img-top" alt="Mobile App Development"
-          title="Mobile App Development" />
+          title="Mobile App Development" loading="lazy" />
         <div class="card-body">
           <h5 class="card-title">Mobile App Development</h5>
           <p class="card-text">
@@ -201,7 +197,7 @@
 
       <div class="card">
         <img src="../../../assets/digital-marketing.gif" class="card-img-top" alt="Digital Marketing"
-          title="Digital Marketing" />
+          title="Digital Marketing" loading="lazy" />
         <div class="card-body">
           <h5 class="card-title">Digital Marketing</h5>
           <p class="card-text">
@@ -218,7 +214,7 @@
 
       <div class="card">
         <img src="../../../assets/seo-service.gif" class="card-img-top" alt="SEO Optimization"
-          title="Search Engine Optimization" />
+          title="Search Engine Optimization" loading="lazy" />
         <div class="card-body">
           <h5 class="card-title">SEO</h5>
           <p class="card-text">
@@ -322,7 +318,7 @@
       </div>
 
       <div class="content">
-        <img [src]="features[selectedIndex].image" alt="Feature Image" title="Macreel Feature" />
+        <img [src]="features[selectedIndex].image" alt="Feature Image" title="Macreel Feature" loading="lazy" />
 
         <div class="text">
           <h2>{{ features[selectedIndex].title }}</h2>
@@ -352,7 +348,7 @@
         <ng-template swiperSlide>
           <div class="card">
             <img src="../../../assets/e-commerce.png" class="card-img-top" alt="Top Ecommerce Website Development"
-              title="Top Ecommerce Website Development" />
+              title="Top Ecommerce Website Development" loading="lazy" />
             <div class="card-body">
               <h6 class="card-title">
                 Top e-commerce Website Dvelopment Company in 2024.
@@ -372,7 +368,7 @@
         <ng-template swiperSlide>
           <div class="card">
             <img src="../../../assets/web-app.png" class="card-img-top" alt="Dropshipping App Development"
-              title="Dropshipping App Development" />
+              title="Dropshipping App Development" loading="lazy" />
             <div class="card-body">
               <h6 class="card-title">
                 How to develop a custom Dropshipping App everything you need to
@@ -391,7 +387,7 @@
         <ng-template swiperSlide>
           <div class="card">
             <img src="../../../assets/mobile-apps.png" class="card-img-top" alt="Web Application Development"
-              title="Web Application Development" />
+              title="Web Application Development" loading="lazy" />
             <div class="card-body">
               <h6 class="card-title">
                 A complete guide to web application development: Types
@@ -542,7 +538,7 @@
       </div>
     </div>
     <div class="image_area">
-      <img src="../../../assets/webdesign.gif" alt="Website Designing" title="Website Designing" />
+      <img src="../../../assets/webdesign.gif" alt="Website Designing" title="Website Designing" loading="lazy" />
     </div>
   </div>
   <!-- frequently asked question code end here  -->
@@ -566,7 +562,7 @@
       <div class="team_card">
         <div class="profile_img">
           <img src="../../../assets/team-1.jpg" alt="Macreel Infosoft Chairman"
-            title="NR Tyagi Mareel Infosoft Chairman" />
+            title="NR Tyagi Mareel Infosoft Chairman" loading="lazy" />
         </div>
         <div class="details">
           <h6>NR Tyagi</h6>
@@ -576,7 +572,7 @@
       </div>
       <div class="team_card">
         <div class="profile_img">
-          <img src="../../../assets/team-2.jpg" alt="Director of Macreel Infosoft Manish Tyagi" title="Manish Tyagi" />
+          <img src="../../../assets/team-2.jpg" alt="Director of Macreel Infosoft Manish Tyagi" title="Manish Tyagi" loading="lazy" />
         </div>
         <div class="details">
           <h6>Manish Tyagi</h6>
@@ -587,7 +583,7 @@
 
       <div class="team_card">
         <div class="profile_img">
-          <img src="assets/priyankas.jpeg" alt="Priyanka Maindolia" title="Priyanka Maindolia" />
+          <img src="assets/priyankas.jpeg" alt="Priyanka Maindolia" title="Priyanka Maindolia" loading="lazy" />
         </div>
         <div class="details">
           <h6>Priyanka Maindolia</h6>
@@ -597,7 +593,7 @@
       </div>
       <div class="team_card">
         <div class="profile_img">
-          <img src="assets/team-3.jpg" alt="Himanshu Gupta" title="Himanshu Gupta" />
+          <img src="assets/team-3.jpg" alt="Himanshu Gupta" title="Himanshu Gupta" loading="lazy" />
         </div>
         <div class="details">
           <h6>Himanhsu Gupta</h6>
@@ -628,57 +624,57 @@
         [loop]="true" [breakpoints]="breaksPointts" class="custom-swiper">
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/angular.png" alt="Angular" title="Angular" />
+            <img src="../../../assets/angular.png" alt="Angular" title="Angular" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/mysql-img.png" alt="MySql" title="MySql" />
+            <img src="../../../assets/mysql-img.png" alt="MySql" title="MySql" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/html.png" alt="HTML" title="HTMl" />
+            <img src="../../../assets/html.png" alt="HTML" title="HTMl" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/css-img.png" alt="CSS" title="Image" />
+            <img src="../../../assets/css-img.png" alt="CSS" title="Image" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/javascript.png" alt="javaScript" title="JavaScript" />
+            <img src="../../../assets/javascript.png" alt="javaScript" title="JavaScript" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/bootstrap.png" alt="Bootstrap" title="Bootstrap" />
+            <img src="../../../assets/bootstrap.png" alt="Bootstrap" title="Bootstrap" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/react.png" alt="React" title="React" />
+            <img src="../../../assets/react.png" alt="React" title="React" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/python.png" alt="Python" title="Python" />
+            <img src="../../../assets/python.png" alt="Python" title="Python" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/typescript.png" alt="Typescript" title="TypeScript" />
+            <img src="../../../assets/typescript.png" alt="Typescript" title="TypeScript" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/xcode-img.png" alt="Xcode" title="Xcode" />
+            <img src="../../../assets/xcode-img.png" alt="Xcode" title="Xcode" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/ionic.png" alt="Ionic" title="Ionic" />
+            <img src="../../../assets/ionic.png" alt="Ionic" title="Ionic" loading="lazy" />
           </div>
         </ng-template>
       </swiper>
@@ -704,68 +700,68 @@
         [loop]="true" [breakpoints]="breaksPointtss" class="custom-swiper">
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <img src="../../../assets/turningbrain.jpg" alt="Turning Brain Website" title="Turning Brain" />
+            <img src="../../../assets/turningbrain.jpg" alt="Turning Brain Website" title="Turning Brain" loading="lazy" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal1">
             <img src="../../../assets/scert-up.png" alt="State Council of Educational Research & Traning"
-              title="State Council of Educational Research & Traning" />
+              title="State Council of Educational Research & Traning" loading="lazy" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal2">
-            <img src="../../../assets/delhitaxiservice.jpg" alt="Delhi Taxi Service" title="Delhi Taxi Service" />
+            <img src="../../../assets/delhitaxiservice.jpg" alt="Delhi Taxi Service" title="Delhi Taxi Service" loading="lazy" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal3">
-            <img src="../../../assets/heerafacility.png" alt="Heera Website" title="Heera Website" />
+            <img src="../../../assets/heerafacility.png" alt="Heera Website" title="Heera Website" loading="lazy" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModals">
-            <img src="../../../assets/servaassociates.jpg" alt="Heera Website" title="Heera Website" />
+            <img src="../../../assets/servaassociates.jpg" alt="Heera Website" title="Heera Website" loading="lazy" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal4">
-            <img src="../../../assets/granlighting.jpg" alt="Grain lighting website" title="Grain lighting website" />
+            <img src="../../../assets/granlighting.jpg" alt="Grain lighting website" title="Grain lighting website" loading="lazy" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal5">
             <img src="../../../assets/tajmahaldaytours.png" alt="Taj Mahal Tours website"
-              title="Taj Mahal Tours website" />
+              title="Taj Mahal Tours website" loading="lazy" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal6">
-            <img src="../../../assets/thedivinedentalcentre.jpg" alt="Divine Website" title="Divine Website" />
+            <img src="../../../assets/thedivinedentalcentre.jpg" alt="Divine Website" title="Divine Website" loading="lazy" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal7">
             <img src="../../../assets/allianceworldschool.jpg" alt="Alliance World School"
-              title="Alliance World School" />
+              title="Alliance World School" loading="lazy" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal8">
             <img src="../../../assets/delhicityschool.jpg" alt="Delhi City School Website"
-              title="Delhi City School Website" />
+              title="Delhi City School Website" loading="lazy" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal9">
             <img src="../../../assets/saikarunadham.png" alt="Sai karuna dham website"
-              title="Sai karuna dham website" />
+              title="Sai karuna dham website" loading="lazy" />
           </button>
         </ng-template>
         <ng-template swiperSlide>
           <button data-bs-toggle="modal" data-bs-target="#exampleModal1s">
             <img src="../../../assets/delhicityschool.in_Science-Tech.jpg" alt="Alliance World School"
-              title="Alliance World School" />
+              title="Alliance World School" loading="lazy" />
           </button>
         </ng-template>
       </swiper>
@@ -789,103 +785,103 @@
         [loop]="true" class="custom-swiper" [breakpoints]="breaksPoints">
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/airtel.webp" alt="Airtel" title="Airtel" />
+            <img src="../../../assets/airtel.webp" alt="Airtel" title="Airtel" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/cambridge-logo.webp" alt="Cambridge School" title="Cambridge School" />
+            <img src="../../../assets/cambridge-logo.webp" alt="Cambridge School" title="Cambridge School" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/dcs-logo.webp" alt="DCS" title="DCS" />
+            <img src="../../../assets/dcs-logo.webp" alt="DCS" title="DCS" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/divine.webp" alt="Divine" title="Divine" />
+            <img src="../../../assets/divine.webp" alt="Divine" title="Divine" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/eduaffair.png" alt="Eduaffair" title="Eduaffair" />
+            <img src="../../../assets/eduaffair.png" alt="Eduaffair" title="Eduaffair" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/gov-of-india-logo.webp" alt="Govt. of India" title="Govt. of India" />
+            <img src="../../../assets/gov-of-india-logo.webp" alt="Govt. of India" title="Govt. of India" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/grain-lighting.png" alt="Grain Lighting" title="Grain Lighting" />
+            <img src="../../../assets/grain-lighting.png" alt="Grain Lighting" title="Grain Lighting" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/greenfield.png" alt="Green Field" title="Green Field" />
+            <img src="../../../assets/greenfield.png" alt="Green Field" title="Green Field" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/heeragroup.jpeg" alt="Heera group" title="Heera group" />
+            <img src="../../../assets/heeragroup.jpeg" alt="Heera group" title="Heera group" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/khd.webp" alt="KHD" title="KHD" />
+            <img src="../../../assets/khd.webp" alt="KHD" title="KHD" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/kisanmandi.svg" alt="kisanmandi" title="kisanmandi" />
+            <img src="../../../assets/kisanmandi.svg" alt="kisanmandi" title="kisanmandi" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/matlinehouse.jpeg" alt="matline house" title="matline house" />
+            <img src="../../../assets/matlinehouse.jpeg" alt="matline house" title="matline house" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/myjyotishg.jpeg" alt="MyJyothish" title="MyJyothish" />
+            <img src="../../../assets/myjyotishg.jpeg" alt="MyJyothish" title="MyJyothish" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/scert-up-logo.webp" alt="SECRET UP" title="SECRET UP" />
+            <img src="../../../assets/scert-up-logo.webp" alt="SECRET UP" title="SECRET UP" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/serva.jpeg" alt="SEVA" title="SEVA" />
+            <img src="../../../assets/serva.jpeg" alt="SEVA" title="SEVA" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/stainlay-india.png" alt="Stainlay india" title="Stainlay india" />
+            <img src="../../../assets/stainlay-india.png" alt="Stainlay india" title="Stainlay india" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/training-brain.png" alt="turning brain" title="turning brain" />
+            <img src="../../../assets/training-brain.png" alt="turning brain" title="turning brain" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
             <img src="../../../assets/up-logo.webp" alt="Government of Uttar pradesh"
-              title="Government of Uttar pradesh" />
+              title="Government of Uttar pradesh" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/vakil-uncle.png" alt="Vakil uncle" title="Vakil uncle" />
+            <img src="../../../assets/vakil-uncle.png" alt="Vakil uncle" title="Vakil uncle" loading="lazy" />
           </div>
         </ng-template>
         <ng-template swiperSlide>
           <div class="image">
-            <img src="../../../assets/wood-group.webp" alt="Wood group" title="Wood group" />
+            <img src="../../../assets/wood-group.webp" alt="Wood group" title="Wood group" loading="lazy" />
           </div>
         </ng-template>
 
@@ -907,7 +903,7 @@
             <div class="testimonial-content">
               <div class="profile-section">
                 <img class="profile-img" src="../../../assets/Nishank Kumar.webp" alt="Nishank Kumar"
-                  title="Nishank Kumar" />
+                  title="Nishank Kumar" loading="lazy" />
               </div>
               <p class="testimonial-text">
                 We've been working together with Macreel Infosoft Pvt Ltd for
@@ -932,7 +928,7 @@
           <div class="testimonial-card">
             <div class="testimonial-content">
               <div class="profile-section">
-                <img class="profile-img" src="../../../assets/Nitin jain.webp" alt="Nitin jain" title="Nitin Jain" />
+                <img class="profile-img" src="../../../assets/Nitin jain.webp" alt="Nitin jain" title="Nitin Jain" loading="lazy" />
               </div>
               <p class="testimonial-text">
                 The Macreel Infosoft team is excellent in their knowledge and
@@ -957,7 +953,7 @@
           <div class="testimonial-card">
             <div class="testimonial-content">
               <div class="profile-section">
-                <img class="profile-img" src="../../../assets/Vilson.webp" alt="Vilson Masih" title="Vilson Masih" />
+                <img class="profile-img" src="../../../assets/Vilson.webp" alt="Vilson Masih" title="Vilson Masih" loading="lazy" />
               </div>
               <p class="testimonial-text">
                 Outstanding digital marketing services! Effective strategies
@@ -984,7 +980,7 @@
             <div class="testimonial-content">
               <div class="profile-section">
                 <img class="profile-img" src="../../../assets/Dr. Rajkapoor.webp" alt="Dr. Rajkapoor"
-                  title="Dr. Rajkapoor" />
+                  title="Dr. Rajkapoor" loading="lazy" />
               </div>
               <p class="testimonial-text">
                 I have been involved in website design and development for our
@@ -1012,7 +1008,7 @@
             <div class="testimonial-content">
               <div class="profile-section">
                 <img class="profile-img" src="../../../assets/Gaurav Thakral.webp" alt="Gaurav Thakral"
-                  title="Gaurav Thakral" />
+                  title="Gaurav Thakral" loading="lazy" />
               </div>
               <p class="testimonial-text">
                 Macreel crafted software for us. They propel our project forward
@@ -1037,7 +1033,7 @@
           <div class="testimonial-card">
             <div class="testimonial-content">
               <div class="profile-section">
-                <img class="profile-img" src="../../../assets/Jitender.jpg" alt="Jitender" title="Jitender" />
+                <img class="profile-img" src="../../../assets/Jitender.jpg" alt="Jitender" title="Jitender" loading="lazy" />
               </div>
               <p class="testimonial-text">
                 Very professional and talented developers. I am impressed by
@@ -1069,7 +1065,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <img src="../../../assets/turningbrain.jpg" alt="Turning Brain" title="Turning Brain" width="100%" />
+        <img src="../../../assets/turningbrain.jpg" alt="Turning Brain" title="Turning Brain" width="100%" loading="lazy" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary">Close</button>
@@ -1081,7 +1077,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <img src="../../../assets/scert-up.png" alt="SCERT Up" title="SCERT UP" width="100%" />
+        <img src="../../../assets/scert-up.png" alt="SCERT Up" title="SCERT UP" width="100%" loading="lazy" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -1097,7 +1093,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <img src="../../../assets/delhitaxiservice.jpg" alt="Delhi tax service" title="Delhi Tax Service"
-          width="100%" />
+          width="100%" loading="lazy" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -1111,7 +1107,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <img src="../../../assets/servaassociates.jpg" alt="Serva Associate" title="Serva Associate" width="100%" />
+        <img src="../../../assets/servaassociates.jpg" alt="Serva Associate" title="Serva Associate" width="100%" loading="lazy" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -1125,7 +1121,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <img src="../../../assets/granlighting.jpg" alt="Grain lighting" title="Grain Lighting" width="100%" />
+        <img src="../../../assets/granlighting.jpg" alt="Grain lighting" title="Grain Lighting" width="100%" loading="lazy" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -1140,7 +1136,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <img src="../../../assets/tajmahaldaytours.png" alt="Taj mahal days Tours" title="Taj mahal days Tours"
-          width="100%" />
+          width="100%" loading="lazy" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -1155,7 +1151,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <img src="../../../assets/thedivinedentalcentre.jpg" alt="The Divine Dental Centre"
-          title="The Divine Dental Centre" width="100%" />
+          title="The Divine Dental Centre" width="100%" loading="lazy" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -1170,7 +1166,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <img src="../../../assets/allianceworldschool.jpg" alt="Alliance World School" title="Alliance World School"
-          width="100%" />
+          width="100%" loading="lazy" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -1184,7 +1180,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <img src="../../../assets/delhicityschool.jpg" alt="Delhi city school" title="Delhi City School" width="100%" />
+        <img src="../../../assets/delhicityschool.jpg" alt="Delhi city school" title="Delhi City School" width="100%" loading="lazy" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -1198,7 +1194,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <img src="../../../assets/saikarunadham.png" alt="Sai Karuna Dham" title="Sai Karuna Dham" width="100%" />
+        <img src="../../../assets/saikarunadham.png" alt="Sai Karuna Dham" title="Sai Karuna Dham" width="100%" loading="lazy" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -1214,7 +1210,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <img src="../../../assets/delhicityschool.in_Science-Tech.jpg" alt="Delhi City School" title="Delhi City School"
-          width="100%" />
+          width="100%" loading="lazy" />
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
