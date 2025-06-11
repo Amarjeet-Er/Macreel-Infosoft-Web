@@ -32,7 +32,8 @@ import { TermsConditionComponent } from './terms-condition/terms-condition.compo
 import { VissonComponent } from './visson/visson.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
-
+import { CollegeErpComponent } from './college-erp/college-erp.component';
+import { MatCardModule } from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,6 +55,7 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     ContactComponent,
     TermsConditionComponent,
     PrivacyComponent,
+    CollegeErpComponent,
 
   ],
   imports: [
@@ -74,7 +76,8 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     MatButtonModule,
     SwiperModule,
     MatDialogModule,
-    LazyLoadImageModule
+    LazyLoadImageModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent],

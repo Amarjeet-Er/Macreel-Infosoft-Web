@@ -145,6 +145,11 @@
       <span (click)="navigateTo('/blogs')">Blog</span>
     </div>
 
+    <div class="drop-downs" [class.active]="isActive(['/collegeerp'])" title="College ERP">
+      <img src="../../../assets/college.png" alt="Macreel Blog" (click)="navigateTo('/collegeerp')" title="College ERP" />
+      <span (click)="navigateTo('/collegeerp')">College ERP</span>
+    </div>
+
     <div class="drop-downs" [class.active]="isActive(['/contact'])" title="Contact us">
       <img src="../../../assets/contact.gif" alt="Contact Macreel" title="Contact"
         (click)="navigateTo('/contact')" />
@@ -255,9 +260,16 @@
           </div>
           <div class="dropdown">
             <button data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/blogs')">
-              <img src="../../../assets/blog.gif" alt="about" width="30px" height="30px" style="margin-top: -13px"
+              <img src="../../../assets/blog.gif" alt="Blog" width="30px" height="30px" style="margin-top: -13px"
                 title="Blog" />
               Blog
+            </button>
+          </div>
+          <div class="dropdown">
+            <button data-bs-dismiss="offcanvas" aria-label="Close" (click)="navigateTo('/collegeerp')">
+              <img src="../../../assets/college.png" alt="College ERP" width="30px" height="30px" style="margin-top: -13px"
+                title="College ERP" />
+              College ERP
             </button>
           </div>
           <div class="dropdown">
