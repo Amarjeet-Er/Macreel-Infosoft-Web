@@ -1,56 +1,89 @@
-.blogs_aera {
+.blogs-area {
   width: 100%;
-  height: auto;
-  float: left;
+  padding: 20px;
+  background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
-  .blog_swiper {
-    width: 80%;
-    height: auto;
-    margin: 50px 10%;
+  .title {
+    text-align: center;
+    max-width: 900px;
+    margin-bottom: 30px;
 
-    .card {
-      // width: 300px;
-      height: auto;
+    .head-title {
+      font-size: 1.1rem;
+      color: #00b36b;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    h4 {
+      font-size: 1.3rem;
+      color: #333;
+      line-height: 1.5;
+    }
+  }
+
+  .blogs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    .blog-card {
+      width: 350px;
+      background: #fff;
+      border-radius: 8px;
       overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-5px);
+        border-color: #00b36b;
+      }
+
+      .card-img-top {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
 
       .card-body {
-        h6 {
-          font-size: 1.3rem;
-          font-weight: 500;
-          text-transform: capitalize;
-          line-height: 25px;
+        padding: 15px;
+
+        .card-title {
+          font-size: 1.1rem;
+          font-weight: 600;
+          margin-bottom: 10px;
+          color: #222;
         }
-        // p {
-        //   padding: 5px;
-        //   font-size: 1rem;
-        //   line-height: 25px;
-        //   display: -webkit-box;
-        //   -webkit-line-clamp: 3;
-        //   -webkit-box-orient: vertical;
-        //   overflow: hidden;
-        //   text-overflow: ellipsis;
-        //   white-space: normal;
-        // }
+
+        .card-text {
+          font-size: 0.95rem;
+          color: #555;
+          line-height: 1.4;
+        }
       }
-    }
-    .card:hover {
-      color: #00b36b;
-      cursor: pointer;
     }
   }
 }
 
+// Responsive
+@media (max-width: 768px) {
+  .blogs-area {
+    .title h4 {
+      font-size: 1.1rem;
+    }
 
-@media(max-width:780px) and (min-width:0px){
-  .blogs_aera {
-    .blog_swiper {
-      width: 80%;
-      margin-left: 10%;
+    .blogs-container {
+      flex-direction: column;
+      align-items: center;
 
-      .card {
-        width: auto;
+      .blog-card {
+        width: 90%;
       }
     }
   }

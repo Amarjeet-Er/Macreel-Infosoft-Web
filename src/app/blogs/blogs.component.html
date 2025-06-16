@@ -1,93 +1,19 @@
-<div class="blogs_aera">
+<div class="blogs-area">
   <div class="title">
-    <h6 class="head_title">Blogs For Business Growth</h6>
+    <h6 class="head-title">Blogs For Business Growth</h6>
     <h4>
-      Stay updated with Macreel Infosoft for latest insights and industry
-      trends! Check topics on website <br />
-      design, digital marketing, mobile apps, software development and many
-      more.
+      Stay updated with Macreel Infosoft for latest insights and industry trends!
+      Check topics on website design, digital marketing, mobile apps, software development and many more.
     </h4>
   </div>
 
-  <div class="blog_swiper">
-    <swiper
-      [slidesPerView]="3"
-      [spaceBetween]="10"
-      [autoplay]="{ delay: 3000, disableOnInteraction: false }"
-      [loop]="true"
-      [breakpoints]="breaksPoint"
-      class="custom-swiper"
-    >
-      <ng-template swiperSlide>
-        <div class="card">
-          <img
-            src="../../../assets/e-commerce.png"
-            class="card-img-top"
-            alt="Top Ecommerce Website Development"
-            title="Top Ecommerce Website Development"
-          />
-          <div class="card-body">
-            <h6 class="card-title">
-              Top e-commerce Website Dvelopment Company in 2024.
-            </h6>
-            <p class="card-text">
-              In the ever-evolving world of eCommerce, having a cutting-edge
-              online store is essential for success. As we move through 2024,
-              businesses need more than just a website-they need a platform
-              that drives sales, engages customers, and adapts to emerging
-              trends. Here's a look at some of the Top Ecommerce Website
-              Development Companies of 2024 that are setting the standard for
-              excellence in the industry.
-            </p>
-          </div>
-        </div>
-      </ng-template>
-      <ng-template swiperSlide>
-        <div class="card">
-          <img
-            src="../../../assets/web-app.png"
-            class="card-img-top"
-            alt="Dropshipping App Development"
-            title="Dropshipping App Development"
-          />
-          <div class="card-body">
-            <h6 class="card-title">
-              How to develop a custom Dropshipping App everything you need to
-              know
-            </h6>
-            <p class="card-text">
-              In the rapidly growing world of e- commerce, dropshipping has
-              emerged as a popular model for entrepreneurs looking to start
-              their online business with minimal upfront investment. If you're
-              considering developing a custom dropshipping app to streamline
-              your operations, you're on the right track.
-            </p>
-          </div>
-        </div>
-      </ng-template>
-      <ng-template swiperSlide>
-        <div class="card">
-          <img
-            src="../../../assets/mobile-apps.png"
-            class="card-img-top"
-            alt="Web Application Development"
-            title="Web Application Development"
-          />
-          <div class="card-body">
-            <h6 class="card-title">
-              A complete guide to web application development: Types
-            </h6>
-            <p class="card-text">
-              In today's digital landscape, web applications play a crucial
-              role in transforming business operations and enhancing user
-              experiences. Understanding the different types of web
-              applications can help you choose the right solution for your
-              needs. Here's a comprehensive guide to the various types of web
-              applications:
-            </p>
-          </div>
-        </div>
-      </ng-template>
-    </swiper>
+  <div class="blogs-container">
+    <div class="blog-card" *ngFor="let blog of blogs">
+      <img [src]="blog.image" class="card-img-top" [alt]="blog.alt" [title]="blog.title" />
+      <div class="card-body">
+        <h6 class="card-title">{{ blog.title }}</h6>
+        <p class="card-text">{{ blog.description }}</p>
+      </div>
+    </div>
   </div>
 </div>
