@@ -35,13 +35,13 @@
     </div>
   </div>
   <div class="menu_area">
-    <div class="logo" (click)="navigateTo('/home')">
+    <div class="logo" (click)="navigateTo('/homepage')">
       <img src="../../../assets/macreel-Infosoft.png" alt="Macreel Logo" title="Macreel Infosoft Logo" />
     </div>
 
-    <div class="drop-downs" [class.active]="isActive('/home')" title="Home">
-      <img src="../../../assets/home.gif" alt="home" (click)="navigateTo('/home')" title="Home" />
-      <span (click)="navigateTo('/home')">Home</span>
+    <div class="drop-downs" [class.active]="isActive('/homepage')" title="Home">
+      <img src="../../../assets/home.gif" alt="home" (click)="navigateTo('/homepage')" title="Home" />
+      <span (click)="navigateTo('/homepage')">Home</span>
     </div>
 
     <div class="drop-downs" [class.active]="
@@ -173,7 +173,7 @@
         </div>
         <div class="offcanvas-body">
           <div class="dropdown">
-            <button (click)="navigateTo('/home')" data-bs-dismiss="offcanvas" aria-label="Close">
+            <button (click)="navigateTo('/homepage')" data-bs-dismiss="offcanvas" aria-label="Close">
               <img src="../../../assets/home.gif" alt="home" width="30px" height="30px" style="margin-top: -13px"
                 title="Home" />
               Home
