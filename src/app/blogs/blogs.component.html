@@ -8,11 +8,12 @@
   </div>
 
   <div class="blogs-container">
-    <div class="blog-card" *ngFor="let blog of blogs">
-      <img [src]="blog.image" class="card-img-top" [alt]="blog.alt" [title]="blog.title" />
+    <div class="blog-card" *ngFor="let blog of blogs" [routerLink]="['/blog', blog.id]">
+      <img [src]="imgUrl + blog.ImagePath" class="card-img-top" [alt]="blog.Title" [title]="blog.Title" />
       <div class="card-body">
-        <h6 class="card-title">{{ blog.title }}</h6>
-        <p class="card-text">{{ blog.description }}</p>
+        <h6 class="card-title">{{ blog?.Title | titlecase }}</h6>
+        <p class="card-date">{{ blog?.creationDate | date: 'mediumDate' }}</p>
+        <p class="card-text" [innerHTML]="blog?.Description"></p>
       </div>
     </div>
   </div>

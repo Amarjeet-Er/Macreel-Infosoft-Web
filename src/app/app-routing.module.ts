@@ -16,6 +16,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsConditionComponent } from './terms-condition/terms-condition.component';
 import { VissonComponent } from './visson/visson.component';
 import { CollegeErpComponent } from './college-erp/college-erp.component';
+import { BlogDetailsComponent } from './blog-details/blog-details.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'homepage', pathMatch: 'full' },
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'visson', component: VissonComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'blogs', component: BlogsComponent },
+  { path: 'blog/:id', component: BlogDetailsComponent },
   { path: 'collegeerp', component: CollegeErpComponent },
   { path: 'terms', component: TermsConditionComponent },
   { path: 'privacy', component: PrivacyComponent },

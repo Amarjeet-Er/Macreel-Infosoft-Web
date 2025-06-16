@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { ServicesService } from '../services.service';
 
 @Component({
   selector: 'app-college-erp',
@@ -8,9 +9,11 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class CollegeErpComponent {
   demoForm: FormGroup;
-  submitted = false;
 
-  constructor(private fb: FormBuilder) {
+  constructor(
+    private fb: FormBuilder,
+    private _crud: ServicesService
+  ) {
     this.demoForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -19,12 +22,26 @@ export class CollegeErpComponent {
       message: ['']
     });
   }
-
   onSubmit(): void {
     if (this.demoForm.valid) {
-      console.log('Form Data:', this.demoForm.value);
-      this.submitted = true;
-      this.demoForm.reset();
+      this._crud.bookademo(this.demoForm.value).subscribe({
+        next: (response: any) => {
+          console.log(response);
+          if (response.success === true) {
+            this._crud.ToastSuccess("Booked Successfully");            
+            this.demoForm.reset();
+          } else {
+             this._crud.ToastSuccess("Demo Not Booked");
+          }
+        },
+        error: (error: any) => {
+          console.error('Booking error:', error);
+           this._crud.ToastSuccess("Something went wrong. Please try again later.");
+        }
+      });
+    } else {
+       this._crud.ToastSuccess("Please fill out the form correctly.");
     }
   }
 }
+

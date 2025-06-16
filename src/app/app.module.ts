@@ -34,6 +34,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { CollegeErpComponent } from './college-erp/college-erp.component';
 import { MatCardModule } from '@angular/material/card';
+import { BlogDetailsComponent } from './blog-details/blog-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,6 +57,7 @@ import { MatCardModule } from '@angular/material/card';
     TermsConditionComponent,
     PrivacyComponent,
     CollegeErpComponent,
+    BlogDetailsComponent,
 
   ],
   imports: [

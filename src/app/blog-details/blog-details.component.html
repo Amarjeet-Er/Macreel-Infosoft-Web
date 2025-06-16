@@ -1,0 +1,15 @@
+<div class="blog-detail-wrapper" *ngIf="blog">
+  <div class="blog-detail-layout">
+    <!-- Left Side: Image -->
+    <div class="blog-image">
+      <img [src]="imgUrl + blog.ImagePath" [alt]="blog.Title" />
+    </div>
+
+    <!-- Right Side: Content -->
+    <div class="blog-content">
+      <h1 class="blog-title">{{ blog.Title | titlecase }}</h1>
+      <p class="blog-date">{{ blog.creationDate | date: 'fullDate' }}</p>
+      <div class="blog-description" [innerHTML]="blog.Description"></div>
+    </div>
+  </div>
+</div>

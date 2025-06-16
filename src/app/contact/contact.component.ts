@@ -47,7 +47,7 @@ export class ContactComponent {
       name: ['', Validators.required],
       phone: ['', Validators.required],
       email: ['', Validators.required],
-      subject: ['', Validators.required],
+      message: ['', Validators.required],
       service: ['', Validators.required],
     });
   }

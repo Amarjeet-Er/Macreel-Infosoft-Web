@@ -8,7 +8,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class ServicesService {
 
-  baseUrl: string = 'https://macreel.co.in/mail/'
+  baseUrl: string = 'https://macreel.co.in/api/'
 
   constructor(
     private http: HttpClient,
@@ -16,11 +16,21 @@ export class ServicesService {
   ) { }
 
   sendEmail(data: any): Observable<any> {
-    return this.http.post<any>(`${this.baseUrl}email.php`, data);
+    return this.http.post<any>(`${this.baseUrl}SubmitEnquiry`, data);
   }
 
   sendContactDetails(data: any): Observable<any> {
     return this.http.post<any>(`${this.baseUrl}contact.php`, data)
+  }
+  bookademo(data: any): Observable<any> {
+    return this.http.post<any>(`${this.baseUrl}insertDigitalForm`, data)
+  }
+
+  getAllBlogs(): Observable<any> {
+    return this.http.get<any>(`${this.baseUrl}GetAllBlogs`)
+  }
+  getBlogById(blogId: any): Observable<any> {
+    return this.http.get<any>(`${this.baseUrl}GetBlogById?id=${blogId}`)
   }
 
   ////////////////// Toast methods //////////////////
