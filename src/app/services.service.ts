@@ -20,7 +20,7 @@ export class ServicesService {
   }
 
   sendContactDetails(data: any): Observable<any> {
-    return this.http.post<any>(`${this.baseUrl}contact.php`, data)
+    return this.http.post<any>(`${this.baseUrl}ContactUs`, data)
   }
   bookademo(data: any): Observable<any> {
     return this.http.post<any>(`${this.baseUrl}insertDigitalForm`, data)
