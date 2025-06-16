@@ -18,8 +18,8 @@ import { VissonComponent } from './visson/visson.component';
 import { CollegeErpComponent } from './college-erp/college-erp.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: ContainerComponent },
+  { path: '', redirectTo: 'homepage', pathMatch: 'full' },
+  { path: 'homepage', component: ContainerComponent },
   { path: 'webdesign', component: WebdesignComponent },
   { path: 'webdevelopment', component: WebdevelopmentComponent },
   { path: 'softwaredevelopment', component: SoftwaredevelopmentComponent },
