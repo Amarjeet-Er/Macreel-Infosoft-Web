@@ -1,4 +1,5 @@
-<br><br><div class="why-erp-container">
+<br><br>
+<div class="why-erp-container">
     <div class="content-section">
         <h2>Education ERP Software – Smarter Campus Management for a Digital Future</h2>
         <p>
@@ -13,7 +14,8 @@
 
     </div>
     <div class="img_area">
-        <img src="../../assets/erp-1.png" alt="Education ERP" title="Education ERP" style="width: 300px;" height="250px" />
+        <img src="../../assets/erp-1.png" alt="Education ERP" title="Education ERP" style="width: 300px;"
+            height="250px" />
     </div>
 </div>
 
@@ -236,7 +238,7 @@
         </ul>
     </div>
     <div class="img_area">
-        <img src="../../assets/erp-3.png" alt="Education ERP" title="Education ERP"  />
+        <img src="../../assets/erp-3.png" alt="Education ERP" title="Education ERP" />
     </div>
 </div>
 
@@ -390,33 +392,40 @@
 
 
         <form [formGroup]="demoForm" (ngSubmit)="onSubmit()">
-            <div class="form-group">              
+            <div class="form-group">
                 <input formControlName="name" id="name" placeholder="Enter name" type="text" />
                 <div class="error" *ngIf="demoForm.get('name')?.touched && demoForm.get('name')?.invalid">
                     Name is required.
                 </div>
             </div>
 
-            <div class="form-group">                
+            <div class="form-group">
                 <input formControlName="email" id="email" placeholder="Enter email" type="email" />
                 <div class="error" *ngIf="demoForm.get('email')?.touched && demoForm.get('email')?.invalid">
                     Enter a valid email.
                 </div>
             </div>
 
-            <div class="form-group">                
-                <input formControlName="contactno" id="contact" placeholder="Enter contact number" type="tel" maxlength="10" />
+            <div class="form-group">
+                <input formControlName="contactno" id="contact" placeholder="Enter contact number" type="tel"
+                    maxlength="10" />
                 <div class="error" *ngIf="demoForm.get('contactno')?.touched && demoForm.get('contactno')?.invalid">
                     Enter a valid 10-digit contact number.
                 </div>
             </div>
 
-            <div class="form-group">                
+            <div class="form-group">
                 <input formControlName="subject" id="subject" placeholder="Enter subject" type="text" />
+                <div class="error" *ngIf="demoForm.get('subject')?.touched && demoForm.get('subject')?.invalid">
+                    Subject is required.
+                </div>
             </div>
 
-            <div class="form-group">                
+            <div class="form-group">
                 <textarea formControlName="message" id="message" placeholder="Enter Message" rows="4"></textarea>
+                <div class="error" *ngIf="demoForm.get('message')?.touched && demoForm.get('message')?.invalid">
+                    Message is required.
+                </div>
             </div>
 
             <button type="submit" [disabled]="demoForm.invalid">Submit Request</button>

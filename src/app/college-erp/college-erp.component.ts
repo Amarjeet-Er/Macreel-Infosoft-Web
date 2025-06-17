@@ -18,8 +18,8 @@ export class CollegeErpComponent {
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       contactno: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
-      subject: [''],
-      message: ['']
+      subject: ['', Validators.required],
+      message: ['', Validators.required]
     });
   }
   onSubmit(): void {
