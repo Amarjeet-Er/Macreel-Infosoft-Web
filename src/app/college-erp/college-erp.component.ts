@@ -17,7 +17,7 @@ export class CollegeErpComponent {
     this.demoForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      contact: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
+      contactno: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
       subject: [''],
       message: ['']
     });
