@@ -11,15 +11,37 @@ export class BlogDetailsComponent {
   blog: any;
   imgUrl: string = 'https://www.macreel.co.in/'
 
-  constructor(private route: ActivatedRoute, private _crud: ServicesService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private _crud: ServicesService,
+  ) {
+
+  }
+
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this._crud.getBlogById(id).subscribe((res) => {
-      this.blog = res.data[0];
+    this.route.queryParams.subscribe(params => {
+      let blogSlug = params['title']; 
+      console.log('Slug from URL:', blogSlug);
 
-      console.log(this.blog, 'hai');
-
+      if (blogSlug) {
+        const blogTitle = this.unslugify(blogSlug); 
+        console.log('Converted Title:', blogTitle);
+        this._crud.getBlogById(blogTitle).subscribe(res => {
+          this.blog = res.data[0];
+          console.log('Blog Details:', this.blog);
+        });
+      }
     });
   }
+
+
+  unslugify(slug: string): string {
+    return slug
+      .split('-')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  }
+
+
 }

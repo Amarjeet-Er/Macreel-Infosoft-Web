@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { ServicesService } from '../services.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-blogs',
@@ -13,7 +14,8 @@ export class BlogsComponent {
   constructor(
     private _meta: Meta,
     private _title: Title,
-    private _crud: ServicesService
+    private _crud: ServicesService,
+    private _router: Router
   ) {
     this._title.setTitle('Blogs | Best IT Solution Company |Macreel Infosoft');
     this._meta.addTags([
@@ -48,4 +50,20 @@ export class BlogsComponent {
       this.blogs = response.data;
     });
   }
+
+  onBlog(blogTitle: string) {
+    const blogData = blogTitle.trim()
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '');
+
+    console.log(blogData);
+
+    this._router.navigate(['/blog'], {
+      queryParams: {
+        title: blogData
+      }
+    });
+  }
+
 }

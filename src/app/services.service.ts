@@ -30,7 +30,7 @@ export class ServicesService {
     return this.http.get<any>(`${this.baseUrl}GetAllBlogs`)
   }
   getBlogById(blogId: any): Observable<any> {
-    return this.http.get<any>(`${this.baseUrl}GetBlogById?id=${blogId}`)
+    return this.http.get<any>(`${this.baseUrl}GetBlogById?title=${blogId}`)
   }
 
   ////////////////// Toast methods //////////////////
