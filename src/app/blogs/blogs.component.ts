@@ -51,17 +51,17 @@ export class BlogsComponent {
     });
   }
 
-  onBlog(blogTitle: string) {
-    const blogData = blogTitle.trim()
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-+|-+$/g, '');
+  onBlog(Id: string) {
+    // const blogData = blogTitle.trim()
+    //   .toLowerCase()
+    //   .replace(/[^a-z0-9]+/g, '-')
+    //   .replace(/^-+|-+$/g, '');
 
-    console.log(blogData);
+    // console.log(blogData);
 
     this._router.navigate(['/blog'], {
       queryParams: {
-        title: blogData
+        id: Id
       }
     });
   }

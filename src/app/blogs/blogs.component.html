@@ -8,7 +8,7 @@
   </div>
 
   <div class="blogs-container">
-    <div class="blog-card" *ngFor="let blog of blogs" (click)="onBlog(blog?.Title)">
+    <div class="blog-card" *ngFor="let blog of blogs" (click)="onBlog(blog?.id)">
       <img [src]="imgUrl + blog.ImagePath" class="card-img-top" [alt]="blog.Title" [title]="blog.Title" />
       <div class="card-body">
         <h6 class="card-title">{{ blog?.Title | titlecase }}</h6>

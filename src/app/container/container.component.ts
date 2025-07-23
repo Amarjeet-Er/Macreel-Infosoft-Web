@@ -4,6 +4,7 @@ import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
 import { EnquiryFormComponent } from '../enquiry-form/enquiry-form.component';
 import { Meta, Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
+import { ServicesService } from '../services.service';
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
@@ -36,11 +37,14 @@ export class ContainerComponent {
     1024: { slidesPerView: 8, spaceBetween: 10 },
   };
 
+  blogs: any;
+  imgUrl: string = 'https://www.macreel.co.in/'
   constructor(
     private dialog: MatDialog,
     private _meta: Meta,
     private _title: Title,
-    private router: Router
+    private _router: Router,
+    private _crud: ServicesService
   ) {
     this._title.setTitle('Best Software Development Company- Macreel Infosoft');
     this._meta.addTags([
@@ -88,10 +92,13 @@ export class ContainerComponent {
       },
       { name: 'description', content: '' },
     ]);
+
+
+    this.getBlog();
   }
 
   navigateTo(path: string) {
-    this.router.navigate([path]);
+    this._router.navigate([path]);
     scroll(0, 0);
   }
 
@@ -138,4 +145,30 @@ export class ContainerComponent {
       disableClose: true,
     });
   }
+
+
+
+  getBlog() {
+    this._crud.getAllBlogs().subscribe((response) => {
+      console.log(response);
+      this.blogs = response.data.slice(0, 5);
+    });
+  }
+
+  onBlog(Id: string) {
+    // const blogData = blogTitle
+    //   .toLowerCase()
+    //   .replace(/[^a-z0-9]+/g, '-')
+    //   .replace(/^-+|-+$/g, '');
+
+    // console.log(blogData);
+
+    this._router.navigate(['/blog'], {
+      queryParams: {
+        id: Id
+      }
+    });
+  }
+
+
 }
